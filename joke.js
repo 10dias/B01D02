@@ -16,6 +16,7 @@ http.get(API, function(res) {
 
     res.on('end', function() {
         finalData = JSON.parse(finalData);
-        console.log(finalData);
+        console.log('CHUCK: ');
+        console.log(finalData.value.joke);
     });
 });
